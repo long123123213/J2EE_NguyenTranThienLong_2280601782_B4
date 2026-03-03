@@ -1,4 +1,4 @@
-# TranNguyenDangKhoi_2280601576_J2EE_B4
+# NguyenTranThienLong_2280601782_J2EE_B4
 
 Simple J2EE application demonstrating validation requirements from the assignment.
 

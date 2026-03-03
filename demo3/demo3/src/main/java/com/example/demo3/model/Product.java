@@ -4,16 +4,8 @@ import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 import org.hibernate.validator.constraints.Length;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class Product {
 
     private int id;
@@ -30,4 +22,48 @@ public class Product {
     private long price;
 
     private Category category;
+
+    // no-args constructor
+    public Product() {}
+
+    // all-args constructor
+    public Product(int id, String name, String image, long price, Category category) {
+        this.id = id;
+        this.name = name;
+        this.image = image;
+        this.price = price;
+        this.category = category;
+    }
+
+    // getters and setters
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getImage() {
+        return image;
+    }
+    public void setImage(String image) {
+        this.image = image;
+    }
+    public long getPrice() {
+        return price;
+    }
+    public void setPrice(long price) {
+        this.price = price;
+    }
+    public Category getCategory() {
+        return category;
+    }
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 }
